@@ -1,5 +1,6 @@
 package ru.mrsu.cookbook.service.impl;
 
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import ru.mrsu.cookbook.exception.NotFoundApiException;
 import ru.mrsu.cookbook.model.Category;
@@ -10,19 +11,16 @@ import java.util.List;
 import java.util.Objects;
 
 @Service
+@AllArgsConstructor
 public class CategoryServiceImpl implements CategoryService {
 
     private final CategoryRepository categoryRepository;
-
-    public CategoryServiceImpl(CategoryRepository categoryRepository) {
-        this.categoryRepository = categoryRepository;
-    }
 
     @Override
     public List<Category> getCategories() {
         List<Category> categories = categoryRepository.findAll();
         if (categories.isEmpty()) {
-            throw new RuntimeException();
+            throw NotFoundApiException.Builder.notFoundApiException().build();
         }
         return categories;
     }
