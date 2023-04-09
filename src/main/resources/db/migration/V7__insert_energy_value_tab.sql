@@ -1,0 +1,9 @@
+INSERT INTO COOKBOOK.ENERGY_VALUE_TAB (calories, proteins, fats, carbohydrates) VALUES (125, 2, 9, 9);
+INSERT INTO COOKBOOK.ENERGY_VALUE_TAB (calories, proteins, fats, carbohydrates) VALUES (102, 6, 6, 2);
+INSERT INTO COOKBOOK.ENERGY_VALUE_TAB (calories, proteins, fats, carbohydrates) VALUES (46, 3, 3, 2);
+INSERT INTO COOKBOOK.ENERGY_VALUE_TAB (calories, proteins, fats, carbohydrates) VALUES (389, 13, 23, 33);
+INSERT INTO COOKBOOK.ENERGY_VALUE_TAB (calories, proteins, fats, carbohydrates) VALUES (379, 41, 8, 38);
+INSERT INTO COOKBOOK.ENERGY_VALUE_TAB (calories, proteins, fats, carbohydrates) VALUES (400, 10, 5, 30);
+INSERT INTO COOKBOOK.ENERGY_VALUE_TAB (calories, proteins, fats, carbohydrates) VALUES (165, 7, 8, 19);
+INSERT INTO COOKBOOK.ENERGY_VALUE_TAB (calories, proteins, fats, carbohydrates) VALUES (362, 4, 23, 35);
+INSERT INTO COOKBOOK.ENERGY_VALUE_TAB (calories, proteins, fats, carbohydrates) VALUES (652, 10, 37, 72);

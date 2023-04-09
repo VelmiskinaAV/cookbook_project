@@ -1,0 +1,15 @@
+spring:
+  flyway:
+    enabled: true
+    schemas: cookbook
+  jpa:
+    properties:
+      hibernate:
+        default_schema: cookbook
+
+datasource:
+  cookbook:
+    hikari:
+     pool-name: cookbook
+     jdbc-url: jdbc:postgresql://ep-lingering-queen-177258.us-east-2.aws.neon.tech/cookbook-db?user=avelm&password=XpCP4Rt5AdDr
+     driver-class-name: org.postgresql.Driver
