@@ -2,7 +2,7 @@ package ru.mrsu.cookbook.service.impl;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import ru.mrsu.cookbook.exception.NotFoundApiException;
+import ru.mrsu.handler.exception.NotFoundApiException;
 import ru.mrsu.cookbook.model.Category;
 import ru.mrsu.cookbook.repository.CategoryRepository;
 import ru.mrsu.cookbook.service.CategoryService;

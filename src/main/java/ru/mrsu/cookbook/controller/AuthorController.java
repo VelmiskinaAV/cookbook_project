@@ -1,5 +1,7 @@
 package ru.mrsu.cookbook.controller;
 
+import lombok.AllArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ru.mrsu.cookbook.model.Author;
 import ru.mrsu.cookbook.service.AuthorService;
@@ -7,17 +9,14 @@ import ru.mrsu.cookbook.service.AuthorService;
 import java.util.List;
 
 @RestController
+@AllArgsConstructor
 public class AuthorController {
 
     private final AuthorService authorService;
 
-    public AuthorController(AuthorService authorService) {
-        this.authorService = authorService;
-    }
-
     @GetMapping("internal/api/v1/authors")
-    List<Author> getAuthors() {
-        return authorService.getAuthors();
+    ResponseEntity<List<Author>> getAuthors() {
+        return ResponseEntity.ok(authorService.getAuthors());
     }
 
     @PostMapping("/api/v1/author")
@@ -26,7 +25,7 @@ public class AuthorController {
     }
 
     @GetMapping("internal/api/v1/author/{id}")
-    Author getAuthorById(@PathVariable("id") String id) {
-        return authorService.getAuthorById(id);
+    ResponseEntity<Author> getAuthorById(@PathVariable("id") String id) {
+        return ResponseEntity.ok(authorService.getAuthorById(id));
     }
 }

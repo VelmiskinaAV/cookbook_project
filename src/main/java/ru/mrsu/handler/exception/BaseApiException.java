@@ -1,4 +1,4 @@
-package ru.mrsu.cookbook.exception;
+package ru.mrsu.handler.exception;
 
 public abstract class BaseApiException extends RuntimeException {
     private final String code;

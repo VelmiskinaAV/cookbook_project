@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Import;
 import ru.mrsu.cookbook.config.ContainerBase;
-import ru.mrsu.cookbook.exception.NotFoundApiException;
+import ru.mrsu.handler.exception.NotFoundApiException;
 import ru.mrsu.cookbook.model.Category;
 import ru.mrsu.cookbook.repository.CategoryRepository;
 import ru.mrsu.cookbook.service.impl.CategoryServiceImpl;

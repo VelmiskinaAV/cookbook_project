@@ -1,4 +1,4 @@
-package ru.mrsu.cookbook.exception;
+package ru.mrsu.handler.exception;
 
 import org.springframework.http.HttpStatus;
 

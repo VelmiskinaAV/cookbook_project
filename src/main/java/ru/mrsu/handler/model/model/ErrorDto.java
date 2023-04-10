@@ -1,4 +1,4 @@
-package ru.mrsu.cookbook.model;
+package ru.mrsu.handler.model.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
