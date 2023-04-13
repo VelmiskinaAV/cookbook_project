@@ -47,6 +47,8 @@ public class CategoryControllerTest {
         when(categoryRepository.findCategoriesById(5L)).thenThrow(NotFoundApiException.class);
     }
 
+
+
     @Test
     void findCategoryByIdStatusIsOk() throws Exception {
         mvc.perform(get("/internal/api/v1/category/{id}", 1L)
